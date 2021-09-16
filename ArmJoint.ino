@@ -61,9 +61,9 @@ const int en = 2, rw = 1, rs = 0, d4 = 4, d5 = 5, d6 = 6, d7 = 7, bl = 3;
 const int i2c_addr = 0x27;
 LiquidCrystal_I2C lcd(i2c_addr, en, rw, rs, d4, d5, d6, d7, bl, POSITIVE);
 
-const byte motorSpeedMax = 40; // This is a limitor for the PWM sent to the motor board
+const byte motorSpeedMax = 60; // This is a limitor for the PWM sent to the motor board
 const byte motorSpeedMin = 10; // The minimum reasonable speed
-const byte motorSpeedHoming = 20; // The speed at which the arm will move to home on startup
+const byte motorSpeedHoming = 40; // The speed at which the arm will move to home on startup
 
 const float armAngleDown = 180.0;
 const float armAngleUp = 245.0;
